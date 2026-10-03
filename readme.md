@@ -1,53 +1,109 @@
-# 1. Create a Docker Image
+# Docker Commands 🐳
+
+## Create Image
+
+```bash
 docker build -t <image-name> .
+```
 
-# 2. Create a Container from an Image
+## Create Container
+
+```bash
 docker run -d --name <container-name> <image-name>
+```
 
-# 3. Delete an Image
-docker rmi <image-name>
+## Start Container
 
-# 4. Delete a Container
-docker rm <container-name>
-
-# 5. Force Delete an Image
-docker rmi -f <image-name>
-
-# 6. Force Delete a Running Container
-docker rm -f <container-name>
-
-# 7. Start a Container
+```bash
 docker start <container-name>
+```
 
-# 8. Stop a Container
+## Stop Container
+
+```bash
 docker stop <container-name>
+```
 
-# 9. Restart a Container
+## Restart Container
+
+```bash
 docker restart <container-name>
+```
 
-# 10. List All Docker Images
+## Delete Container
+
+```bash
+docker rm <container-name>
+```
+
+## Force Delete Container
+
+```bash
+docker rm -f <container-name>
+```
+
+## Delete Image
+
+```bash
+docker rmi <image-name>
+```
+
+## Force Delete Image
+
+```bash
+docker rmi -f <image-name>
+```
+
+## List Images
+
+```bash
 docker images
+```
 
-# 11. List Running Containers
+## List Running Containers
+
+```bash
 docker ps
+```
 
-# 12. List All Containers
+## List All Containers
+
+```bash
 docker ps -a
+```
 
-# 13. View Container Logs
+## View Container Logs
+
+```bash
 docker logs <container-name>
+```
 
-# 14. Access Container Terminal
+## Access Container
+
+```bash
 docker exec -it <container-name> bash
+```
 
-# 15. Rename a Container
+## Rename Container
+
+```bash
 docker rename <old-name> <new-name>
+```
 
-# 16. Remove Unused Images
+## Remove Unused Images
+
+```bash
 docker image prune
+```
 
-# 17. Remove Stopped Containers
+## Remove Stopped Containers
+
+```bash
 docker container prune
+```
 
-# 18. Remove Unused Docker Resources
+## Remove Unused Resources
+
+```bash
 docker system prune
+```

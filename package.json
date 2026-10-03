@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "nodemon": "^3.1.14"
   }
 }

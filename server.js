@@ -1,12 +1,7 @@
-const http = require("http");
+const express = require('express')
+const app = express()
+require("dotenv").config()
 
-const PORT = 3000;
-
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Hello from Node.js Docker!");
-});
-
-server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+const port = process.env.PORT
+app.get('/', (req, res) => res.send('Hello World!'))
+app.listen(port, () => console.log(`app listening on port ${port}!`))

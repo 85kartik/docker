@@ -49,11 +49,5 @@ docker image prune
 # 17. Remove Stopped Containers
 docker container prune
 
-# 18. Remove All Unused Docker Resources
+# 18. Remove Unused Docker Resources
 docker system prune
-
-# 19. Build Image with a Dockerfile
-docker build -t myapp .
-
-# 20. Run Container from Image
-docker run -d --name mycontainer myapp
